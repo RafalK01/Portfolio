@@ -1,0 +1,269 @@
+:root {
+    --background: #0a192f;
+    --bright-green-details: #2ce2c8;
+    --basic-font-color: #BDC3D5;
+    --brighter-font: #F0F4FE;
+}
+
+body {
+    color: var(--basic-font-color);
+    background-color: var(--background);
+    scroll-behavior: smooth;
+}
+
+nav{
+   background-color: var(--background) ;
+   box-shadow: 0 0 5px rgba(44, 226, 200, 0.5);
+
+}
+
+.logo{
+    height: 6vh;
+}
+
+.light-green{
+    color: var(--bright-green-details);
+}
+
+.btn-custom-bright {
+    color: var(--bright-green-details);
+    border-color: var(--bright-green-details);
+    min-width: 90px;
+}
+
+.btn-custom-bright:hover, .clicked{
+    color: var(--background);
+    border-color: var(--background);
+    background-color: var(--bright-green-details);
+}
+
+
+
+
+.intro-section {
+    background-color: rgb(213, 212, 212);
+    height: 100vh;
+    background-color: var(--background)
+}
+
+.my-name {
+    color: var(--brighter-font);
+    font-size: 50px;
+}
+
+.my-job{
+    font-size: 35px;
+}
+
+.about-section {
+    background-color: var(--background);
+    min-height: 95vh;
+
+}
+
+.list-item {
+    list-style-type: circle;
+}
+
+.profile-pic {
+    /* opacity: 30%; */
+    border-radius: 10px;
+    height: 50vh;
+}
+
+/* .profile-pic:hover {
+    opacity: 100%;
+}
+
+.img-mask{
+    background-color: #2ce2c8;
+    border-radius: 10px;
+} */
+
+.skill-list-column-2{
+    margin-left: 150px;
+}
+
+.projects-section {
+    background-color: var(--background);
+    min-height: 90vh;
+}
+
+.contact-section {
+    background-color: var(--background);
+    min-height: 85vh;
+}
+
+.experience-section{
+    min-height: 80vh;
+}
+
+.projects-container{
+    overflow-y: scroll;
+    overflow-x: visible;
+    max-height: 80vh;
+    max-width: 100%;
+}
+
+.project-card {
+    width: 280px;
+    height: 450px;
+    background-color: lightgray;
+    flex-shrink: 0;
+    border-radius: 10px;
+   
+}
+/* ---------- */
+
+.project-card-container {
+    width: 280px;
+    height: 450px;
+    perspective: 800px;
+    flex-shrink: 0;
+}
+
+.project-card-container:hover > .project-card{
+    cursor: pointer;
+    transform: rotateY(180deg)
+}
+
+.project-card{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+}
+
+
+.front, 
+.back{
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    border-radius: 10px;
+
+    position: absolute;
+    backface-visibility: hidden;
+
+}
+
+.front{
+    background-image: url(./img/vinify.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.front-overlay{
+    width: 100%;
+    height: 100%;
+    background-color: #2ce2c8;
+    opacity: 70%;
+    border-radius: 10px;
+
+}
+
+.back{
+    background-color: var(--brighter-font);
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 20px rgba(44, 226, 200, 0.5);
+    color: #0a192f;
+}
+
+.btn-custom-project{
+    color: var(--bright-green-details);
+    border-color: var(--bright-green-details);
+    min-width: 85px;
+}
+
+.btn-custom-project:project{
+    color: var(--background);
+    background-color: var(--bright-green-details);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------- */
+.job-description{
+    overflow: scroll;
+    max-height: 40vh;
+}
+
+.social-icon{
+    width: 100px;
+}
+
+.contact-items a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 180px;
+    height: 180px;
+    margin: 16px;
+    border-radius: 10px;
+    text-decoration: none;    
+
+}
+
+
+.contact-items a:hover{
+    box-shadow: 0 0 30px rgba(44, 226, 200, 0.5);
+
+}
+
+.contact-items h1{
+    color: white;
+}
+
+
+.info{
+    display: none;
+    color: white;
+}
+
+.mean:hover + .info{
+    display: block;
+}
+
+.mean:hover {
+    display: none;
+}
+
+
+
+.white{
+    color: var(--brighter-font)
+}
+
